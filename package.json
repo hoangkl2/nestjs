@@ -24,7 +24,10 @@
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
     "@nestjs/typeorm": "^9.0.1",
+<<<<<<< HEAD
     "class-transformer": "^0.5.1",
+=======
+>>>>>>> 35de7e11c553a5011503e2ee0d0e88f34c07e57f
     "class-validator": "^0.14.0",
     "mysql2": "^3.1.2",
     "reflect-metadata": "^0.1.13",

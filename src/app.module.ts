@@ -8,17 +8,19 @@ import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
-    // TypeOrmModule.forRoot({
-    //   type: 'mysql',
-    //   host: 'localhost',
-    //   port: 3306,
-    //   username: 'root',
-    //   password: 'root',
-    //   database: 'test',
-    //   entities: [],
-    //   synchronize: true,
-    // }),
-    UserModule, ProductModule, AuthModule
+    TypeOrmModule.forRoot({
+      type: 'mysql',
+      host: 'localhost',
+      port: 3306,
+      username: 'root',
+      password: 'root',
+      database: 'test_nestjs',
+      entities: [],
+      synchronize: true,
+    }),
+    UserModule,
+    ProductModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],
